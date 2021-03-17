@@ -1,0 +1,506 @@
+*{
+  	margin:0;
+  	padding:0;
+  	list-style:none;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+  
+}
+.close{display:none;}
+
+
+img { width: 100%; }
+a{text-decoration: none;}
+a:hover { text-decoration: none; }
+a:focus, input:focus, button:focus, textarea:focus, select:focus { outline: 0; text-decoration: none; }
+ul,li { margin: 0; padding: 0; list-style: none; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+span { vertical-align: baseline; }
+p { margin: 0; line-height: 1.5; }
+html, body { min-height: 100%;}
+body{
+     margin:0;
+     padding:0;
+     position: relative;
+     background-color:#000;
+     font-family: arial,'Microsoft YaHei','SimHei','Microsoft JhengHei',"微軟正黑體";
+
+   }
+.bo{border:1px solid #fff;}
+
+body.overhidden{
+	overflow:hidden; /*  鎖住body scrollbar */
+}
+/*  clearfix */ 
+.clearfix {display: block;}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .clearfix {height: 1%;}
+
+.pc_wrap{
+    width:1920px;
+    height:5350px;
+    margin:0 auto;
+}
+
+/*  all */
+header{
+    position:relative;
+    width:100%; 
+    height:1077px; 
+    background:#000 url("images/header_bg.jpg") no-repeat; 
+  }  
+.pro1_wrap{
+    position:relative;
+    width:100%; 
+    height:1098px; 
+    background:#000 url("images/promotion1_bg.jpg") no-repeat;
+}
+.pro2_wrap{
+    position:relative;
+    width:100%; 
+    height:1526px; 
+    background:#000 url("images/promotion2_bg.jpg") no-repeat;
+}
+.pro3_wrap{
+    position:relative;
+    width:100%; 
+    height:1586px; 
+    background:#000 url("images/promotion3_bg.jpg") no-repeat;
+}
+
+/* header區塊 */
+.logo{
+   width:192px; 
+   height:42px;
+   position:absolute;
+   top:33px;
+   left:417px;
+ }
+ .menu_btn{
+  width:270px;
+  height:40px;
+  position:absolute;
+   top:33px;
+   left:1236px;
+ }
+ .menu_btn a{
+  display:inline-block;
+  float:left;
+  width:126px;
+  height:38px;
+  text-align:center;
+  line-height:38px;
+  color:#ffeb9b;
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:5px;
+  padding-left:23px;
+  background:#000 url("images/menu_btn_bg.png") no-repeat;
+  transition: all .5s;
+  -ms-transition:all .5s; 
+ }
+  .menu_btn a:hover{
+   color:#000;
+   background:#000 url("images/menu_btn_h.png") no-repeat;
+  }
+.menu_btn a + a{margin-left:7px;}
+
+
+/*  酒瓶按鈕 */
+.bottle_box{position:absolute; top:500px; left:440px;}
+.bottle_box a{
+  display:block;
+  width:466px;
+  height:125px;
+  text-align:left;
+  background:url("images/wine.png") no-repeat;
+  transition: all .5s;
+  -ms-transition:all .5s; 
+}
+.bottle_box a span{
+  color:#feefb3;
+  font-size:30px;
+  font-weight:700;
+  line-height:113px;
+  padding-left:50px;
+  background: -webkit-linear-gradient(#fff8d9, #fde997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing:3px;
+}
+.bottle_box a:nth-child(2) span{letter-spacing:8px;}
+.bottle_box a:first-child span{letter-spacing:16px;}
+.bottle_box a + a{margin-top:17px;}
+.bottle_box a:hover{
+   margin-left:35px;
+   background:url("images/wine_h.png") no-repeat;
+}
+
+section .btn_style{
+   display:block;
+   width:420px;
+   height:160px;
+   background:url("images/l_wine.png") no-repeat;
+   text-align:left;
+   padding-left:100px;
+}
+section .btn_style:hover{
+   background:url("images/l_wine_h.png") no-repeat;
+}
+section .btn_style span{
+  color:#feefb3;
+   font-size:24px;
+   font-weight:700;
+   line-height:160px;
+   background: -webkit-linear-gradient(#fff8d9, #fde997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing:8px;
+}
+.pro1_wrap a{position:absolute; top:730px; left:770px;}
+.pro2_wrap a{position:absolute; top:1177px; left:770px;}
+.pro3_wrap a{position:absolute; top:1130px; left:770px;}
+
+/*  浮動視窗  */
+#abgne_float_ad {
+    display: none;
+    position: absolute;
+}
+
+
+.float_box{
+   width:155px; 
+   height:325px;
+   opacity:0;
+   position:absolute;
+   top:0;
+   right:50px;
+ }
+.float_box span{display:block;}
+.float_box span ul{padding-top:155px;}
+.float_box span ul li{
+  margin:0 auto;
+  width:125px;
+  height:40px;
+  color:#fff;
+  text-align:center;
+  
+}
+.float_box span ul li a{
+  display:block; 
+  color:#fff; 
+  line-height:40px;
+}
+.float_box span ul li a:hover{
+  color:#000;
+  font-weight:600;
+  width:125px;
+  height:40px;
+  background:url("images/float_h.png") no-repeat;
+}
+.float_box span:first-child{
+  width:100%;
+  height:275px;
+  background: url("images/float_icon.png") no-repeat; 
+}
+.float_box .gotop {
+   width:155px; 
+   height:50px;
+   background: url("images/top.png") no-repeat; 
+   transition: all .5s;
+  -ms-transition:all .5s;
+}
+.float_box .gotop:hover{
+   cursor:pointer;
+   background: url("images/top_h.png") no-repeat;
+  }
+
+/*  彈跳視窗 */
+.jump_wrap{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  margin:0;
+  background: rgba(0,0,0,.95);
+}
+
+.jump_wrap .jump_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mem_login > span input{
+  width:312px;
+  height:50px;
+  color:#fff;
+  font-size:16px;
+  padding-left:8px;
+  border:1px solid #fff;
+  background:none;
+}
+/*  close_btn */
+.close_btn{
+  position:absolute;
+  right:-60px;
+  display:block;
+  width:50px;
+  height:50px;
+  background:url("images/close_x.png") no-repeat;
+}
+/*  控制所有按鈕定位 */
+
+.jump_content .jump_btn a{
+   position:absolute;
+   top:160px;
+   left:0px;
+}
+.jump_q .jump_btn a{
+   position:absolute;
+   top:1060px;
+   left:340px;
+}
+.jump_q .jump_btn a:before{
+   content:'已检查过答案';
+   position:absolute;
+   top:50px;
+   padding-left:10px;
+   color:#fff;
+   font-size:16px;
+} 
+.jump_thans .jump_btn a{
+   position:absolute;
+   top:310px;
+   left:320px;
+}
+.redwine_wrap .jump_btn a{
+   position:absolute;
+   top:50px;
+   left:0px;
+}
+.vip_wrap .jump_btn a{
+   position:absolute;
+   top:50px;
+   left:0px;
+}
+.vip_wrap2 .jump_btn a{
+   position:absolute;
+   bottom:70px;
+   left:270px;
+}
+.jump_thans .jump_btn a span{
+  padding-left:30px;
+}
+
+.act { display: none; }
+.act2 .jump_btn a span{
+  padding-left:30px;
+}
+.act3 .jump_btn a span{
+  padding-left:30px;
+}
+
+.jump_inner .btn_style{
+   display:block;
+   width:420px;
+   height:160px;
+   background:url("images/l_wine.png") no-repeat;
+   text-align:left;
+   padding-left:100px;
+}
+.jump_inner .btn_style:hover{
+   background:url("images/l_wine_h.png") no-repeat;
+}
+.jump_inner .btn_style span{
+  color:#feefb3;
+   font-size:24px;
+   font-weight:700;
+   line-height:160px;
+   background: -webkit-linear-gradient(#fff8d9, #fde997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing:8px;
+}
+.jump_wrap .jump_content{
+  position:relative;
+  width:935px;
+  height:600px;
+  margin:0 auto;
+  background:url("images/s1_pic1.png") no-repeat;
+}
+.jump_wrap .jump_thans{
+  position:relative;
+  width:935px;
+  height:533px;
+  margin:0 auto;
+  background:url("images/s1_pic3.png") no-repeat;
+}
+.jump_wrap .redwine_wrap{
+  position:relative;
+  width:904px;
+  height:543px;
+  margin:0 auto;
+  background:url("images/s2_pic1.png") no-repeat;
+}
+.jump_wrap .redwine_wrap2{
+  position:relative;
+  width:906px;
+  height:684px;
+  margin:0 auto;
+  background:url("images/s2_pic2.png") no-repeat;
+}
+.jump_wrap .vip_wrap{
+  position:relative;
+  width:884px;
+  height:511px;
+  margin:0 auto;
+  background:url("images/s3_pic1.png") no-repeat;
+}
+.jump_wrap .vip_wrap2{
+  position:relative;
+  width:863px;
+  height:652px;
+  margin:0 auto;
+  background:url("images/s3_pic2.png") no-repeat;
+}
+.jump_wrap .jump_content > div{
+   position:absolute;
+   top:220px;
+   left:340px;
+   color:#fff;
+   font-size:18px;
+}
+.jump_wrap .redwine_wrap > div{
+   position:absolute;
+   top:220px;
+   left:340px;
+   color:#fff;
+   font-size:18px;
+}
+.jump_wrap .redwine_wrap2 > div{
+   position:absolute;
+   top:440px;
+   left:340px;
+   color:#fff;
+   font-size:18px;
+}
+.jump_wrap .vip_wrap > div{
+   position:absolute;
+   top:220px;
+   left:340px;
+   color:#fff;
+   font-size:18px;
+}
+/*  問卷題目 */
+.jump_q{
+  position:relative;
+  width:935px;
+  height:1266px;
+  margin:0 auto;
+  background:url("images/s1_pic2.png") no-repeat;
+}
+.jump_q .q_box{
+  width:500px;
+  padding:230px 0 0 295px;
+}
+.jump_q .q_box ul li{
+  width:500px; 
+}
+.jump_q .q_box ul li:first-child span{
+  font-size:20px;
+  color:#fff;
+  font-weight:700;
+  line-height:20px;
+}
+.jump_q .q_box ul li label{
+  display: block;
+  width:50%;
+  margin:20px 0;
+}
+.jump_q .q_box ul li label input{
+  display: none;
+}
+.jump_q .q_box ul li label span {
+  display: inline-block;
+  position: relative;
+  font-size:18px;
+  color: #ffeb9b;
+  font-weight: bold;
+  padding-left:32px;
+}
+.jump_q .q_box ul li label span::before {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #ffeb9b;
+  border-radius: 9px; 
+  left: 0;
+  z-index: 1;
+}
+.jump_q .q_box ul li label span::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background:url("images/hock.png") no-repeat;
+  left: 2px;
+  top: -10px;
+  z-index: 2;
+  opacity: 0;
+}
+.jump_q .q_box ul li label input:checked + span::after{
+  opacity: 1;
+}
+/* 第五題 setting */
+.jump_q .q_box ul li ul{
+  width:100%; 
+}
+.jump_q .q_box ul li ul li{
+   display:inline-block;
+   float:left;
+   width:245px; 
+}
+.jump_q .q_box ul li ul li label{
+  width:245px; 
+  color: #ffeb9b;
+}
+.jump_q .q_box ul li ul li:first-child span{
+  color: #ffeb9b;
+  font-size:18px;
+  line-height:16px;
+}
+
+
+
+/*  footer */
+footer{
+    position:relative;
+    width:100%; 
+    height:63px; 
+    background:#000 url("images/footer_bg.jpg") repeat-x; 
+  }
+footer .foot_inner{
+    width:250px;
+    margin:0 auto;
+    padding:40px 0;
+    text-align:center;
+  }
+footer .foot_inner span{
+    color:#ffeb9b;
+    font-size:14px;
+  }
